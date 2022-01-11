@@ -2,10 +2,9 @@ package ru.mt.lesson7;
 
 public class Main {
     public static void main(String[] args) {
-        double rubles = 31400.0; // Узнав, что вы занялись программированием, ваш друг попросил помочь ему и написать несложный калькулятор для конвертации рублей в доллары. Вы пока умеете немного, но этого уже достаточно, чтобы помочь ему! В переменной dollars сохраните сумму сбережений в долларах. Для этого рубли нужно разделить на курс доллара.
+        double rubles = 31400.0;
         double rateUSD = 78.5;
-        double dollars =  ;
-
-        System.out.println(...); // Напечатайте значение переменной dollars
+        double dollars = rubles / rateUSD  ;
+        System.out.println(dollars);
     }
 }
