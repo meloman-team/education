@@ -3,16 +3,22 @@ package ru.mt.lesson18;
 public class Main2 {
     public static void main(String[] args) {
 
-        double moneyBeforeSalary = 30001.0;
+        double rubles = 14560.5;
+        double rateUSD = 78.5;
+        double rateEUR = 85.5;
+        double rateJPY = 0.74; // Курс японской иены
 
-        if (moneyBeforeSalary < 3000) {
-            System.out.println("Сегодня лучше поесть дома. Экономьте, и вы дотянете до зарплаты!");
-        } else if (moneyBeforeSalary < 10000) {
-            System.out.println("Окей, пора в Макдак!");
-        } else if  (moneyBeforeSalary <30000) {
-            System.out.println("Неплохо! Прикупите долларов и зайдите поужинать в классное место.");
-        } else {
-            System.out.println("Класс! Заказывайте крабов!");
+        String currency = "DKK";
+        System.out.println("Вы конвертируете рубли в " + currency);
+
+        if (currency.equals("USD")) {
+            System.out.println("Ваши сбережения в долларах: " + rubles / rateUSD);
+        } else if (currency.equals("EUR")) {
+            System.out.println("Ваши сбережения в евро: " + rubles / rateEUR);
+        } ... {
+            System.out.println("Ваши сбережения в иенах: " + rubles / rateJPY);
+        } ... {
+            System.out.println("Валюта не поддерживается.");
         }
     }
 }
